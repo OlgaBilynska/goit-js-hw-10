@@ -8,7 +8,7 @@ export function fetchBreeds() {
       if (!response.ok) {
         throw new Error(response.statusText);
       }
-      return response.json();
+      return console.log(response.json());
     })
     .catch(error => console.log(error));
 }
